@@ -4,6 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+// if dev mode
+if (process.env.NODE_ENV === 'developement') {
+
+  console.log('non-issue')
+  require('./mock-endpoints/mocks')
+
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
